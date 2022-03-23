@@ -1,9 +1,43 @@
 .banner {
     width: 100%;
     height: 550px;
+    background-image: url('../assets/poster.png');
+    object-fit: contain;
 }
 
-.banner img {
-    width: 100%;
-    object-fit: contain;
+.banner-text {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    margin-left: 77px;
+    width: 490px;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 72px;
+}
+
+@media(max-width:850px) {
+    .banner-text {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media(max-width:400px) {
+    .banner {
+        height: 250px;
+    }
+    .banner-text {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        width: 273px;
+    }
+    .banner-text h1 {
+        color: white;
+        font-size: 28px;
+    }
 }

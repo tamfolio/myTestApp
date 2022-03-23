@@ -11,3 +11,13 @@
     border: 1px solid #fff;
     padding: 14px 19px;
 }
+
+@media(max-width: 850px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar img {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

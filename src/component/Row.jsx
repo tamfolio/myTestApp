@@ -1,5 +1,5 @@
 import React from 'react'
-import '.Row.css'
+import './Row.css'
 
 function Row({title, movies}) {
   return (
@@ -7,7 +7,7 @@ function Row({title, movies}) {
         <h1>{title}</h1>
         <div className="row-items">
          {movies.map(movie => (
-          <h1>{movie.Title}</h1>
+           <img className='row-item' src={movie.Poster} alt="" />  
         ))}
         </div>
     </div>

@@ -4,7 +4,9 @@ import './Poster.css'
 function Poster() {
   return (
     <div className='banner'>
-        <img src="./images/poster.png" alt="" />
+      <div className="banner-text">
+      <h1>Watch Something Incredible</h1>
+      </div>
     </div>
   )
 }
