@@ -51,11 +51,8 @@ function App() {
     <div className="App">
       <Nav/>
       <Poster/>
-      <>
       <Row movies={animatedMovies} title='Animation'/>
       <Row movies={actionMovies} title='Action'/>
-      </>
-      
     </div>
   );
 }
