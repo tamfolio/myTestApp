@@ -51,7 +51,7 @@ function App() {
     <div className="App">
       <Nav/>
       <Poster/>
-      <Search getQuery={(q) => setQuery(q)}/>
+      {query && query.length >= 3 ? <Row movies={search} title='Search Results'/> :<Search getQuery={(q) => setQuery(q)}/>}
       <Row movies={animatedMovies} title='Animation'/>
       <Row movies={actionMovies} title='Action'/>
     </div>
