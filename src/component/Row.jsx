@@ -7,7 +7,7 @@ function Row({title, movies}) {
         <h1>{title}</h1>
         <div className="row-items">
          {movies.map(movie => (
-           <img className='row-item' src={movie.Poster} alt="" />  
+           <img className='row-item' src={movie.Poster} alt="" key={movie.imdbID} />  
         ))}
         </div>
     </div>
