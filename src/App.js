@@ -39,7 +39,7 @@ function App() {
 
           
       );
-           setSearch(searchresult)
+           setSearch(searchresult.data.Search)
       }
 
       
