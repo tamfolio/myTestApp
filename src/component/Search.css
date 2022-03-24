@@ -1,0 +1,21 @@
+.search {
+    margin-left: 77px;
+}
+
+input {
+    width: 1306px;
+    height: 54px;
+    margin-top: 10px;
+}
+
+@media(max-width:850px) {
+    input {
+        width: 680px;
+    }
+}
+
+@media(max-width:400) {
+    input {
+        width: 268px;
+    }
+}
