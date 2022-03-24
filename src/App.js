@@ -4,13 +4,13 @@ import Poster from './component/Poster';
 import { useState, useEffect} from 'react'
 import axios from 'axios'
 import Row from './component/Row';
-import Search from './component/Search';
+// import Search from './component/Search';
 
 function App() {
   const[animatedMovies, setAnimatedMovies] = useState([]);
   const[actionMovies, setActionMovies] = useState([]);
-  const [query, setQuery] = useState("");
-  const [search, setSearch] = useState("");
+  // const [query, setQuery] = useState("");
+  // const [search, setSearch] = useState("");
 
 
   useEffect(() => {
@@ -31,29 +31,31 @@ function App() {
 
     fetchItems();
   }, []);
-  useEffect(() => {
-    const search = async () => {
-      if(query.length >= 3) {
-      const searchresult = await axios.get(
-        `http://www.omdbapi.com/?apikey=9aa6a131&type=movie&s=${query}`
+  // useEffect(() => {
+  //   const search = async () => {
+  //     if(query.length >= 3) {
+  //     const searchresult = await axios.get(
+  //       `http://www.omdbapi.com/?apikey=9aa6a131&type=movie&s=${query}`
 
           
-      );
-           setSearch(searchresult)
-      }
+  //     );
+  //          setSearch(searchresult)
+  //     }
 
       
-    }
-    search();
-  },[query])
+  //   }
+  //   search();
+  // },[query])
 
   return (
     <div className="App">
       <Nav/>
       <Poster/>
-      {query && query.length >= 3 ? <Row movies={search} title='Search Results'/> :<Search getQuery={(q) => setQuery(q)}/>}
+      <>
       <Row movies={animatedMovies} title='Animation'/>
       <Row movies={actionMovies} title='Action'/>
+      </>
+      
     </div>
   );
 }

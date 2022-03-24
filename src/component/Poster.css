@@ -29,6 +29,9 @@
 @media(max-width:400px) {
     .banner {
         height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .banner-text {
         justify-content: center;
