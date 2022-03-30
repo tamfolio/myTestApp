@@ -3,6 +3,7 @@
     height: 550px;
     background-image: url('../assets/poster.png');
     object-fit: contain;
+    margin-bottom: 63px;
 }
 
 .banner-text {
@@ -11,11 +12,14 @@
     height: 550px;
     margin-left: 77px;
     width: 490px;
+    line-height: 93.74px;
+    letter-spacing: -5px;
 }
 
 .banner-text h1 {
     color: white;
     font-size: 72px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 @media(max-width:850px) {

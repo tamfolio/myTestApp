@@ -10,6 +10,8 @@
     margin-left: 77px;
     border: 1px solid #fff;
     padding: 14px 19px;
+    width: 193px;
+    height: 60px;
 }
 
 @media(max-width: 850px) {
