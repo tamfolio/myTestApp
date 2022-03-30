@@ -3,9 +3,28 @@
     margin-bottom: 0;
 }
 
+.search h1 {
+    font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
+}
+
 input {
     width: 90%;
     height: 54px;
     margin-top: 4px;
     margin-bottom: 0;
+}
+
+@media(max-width:850px) {}
+
+@media(max-width:400px) {
+    .search {
+        margin-left: 28px;
+    }
+    .search h1 {
+        font-size: 16px;
+    }
+    input {
+        height: 34px;
+    }
 }

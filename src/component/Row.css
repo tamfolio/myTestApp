@@ -6,6 +6,7 @@
 
 .row h1 {
     font-size: 24px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .row-items {
@@ -28,4 +29,13 @@
     margin-right: 13px;
     padding: 10px;
     background-size: cover;
+}
+
+@media(max-width:400px) {
+    .row {
+        margin-left: 28px;
+    }
+    .row-items {
+        margin-top: 26px;
+    }
 }

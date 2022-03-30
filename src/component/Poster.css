@@ -13,7 +13,7 @@
     margin-left: 77px;
     width: 490px;
     line-height: 93.74px;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
 }
 
 .banner-text h1 {
@@ -23,6 +23,11 @@
 }
 
 @media(max-width:850px) {
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .banner-text {
         justify-content: center;
         text-align: center;
@@ -42,6 +47,9 @@
         text-align: center;
         margin: 0;
         width: 273px;
+        height: 73px;
+        padding-left: 15px;
+        line-height: 36px;
     }
     .banner-text h1 {
         color: white;
